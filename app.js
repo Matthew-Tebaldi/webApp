@@ -11,6 +11,9 @@ var app = express();
 console.log('worked');
 
 
+//Set Static Vars
+app.use(express.static(__dirname + '/public'));
+
 // View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
