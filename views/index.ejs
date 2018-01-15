@@ -1,20 +1,74 @@
 <% include partials/header %>
 
 
-<h1 id="h01" title="A web app for something"> WELCOME</h1>
+    <h1 id="h01" title="A web app for something"> WELCOME</h1>
 
 
-<a href="https://www.w3schools.com" target="_blank">This is a link that opens a new window/tab</a>
-<a href="https://www.w3schools.com" target="_top"> This will change the page you are on</a>
-<hr>
+    <a href="https://www.w3schools.com" target="_blank">This is a link that opens a new window/tab</a>
+    <a href="https://www.w3schools.com" target="_top"> This will change the page you are on</a>
+    <hr>
 
-<img src="images/background.jpg" alt="Background is unavailable" >
+    <img src="images/background.jpg" alt="Background is unavailable">
 
-<hr>
-<h1>The image below is a link</h1>
+    <hr>
+    <h1 class="center">The image below is a link</h1>
 
-<a href="https://www.pornhub.com" target="_top">
-    <img src="images/background.jpg" alt="error" style="width:42px;height:42px;border:0;">
-  </a>
+    <p>
+        This is an example of floating an image to the right of text.
+        <a href="https://www.pornhub.com" target="_top">
+            <img src="images/background.jpg" alt="error" style="float:right;width:100px;height:100px;border:0;">
+        </a>
+        <br>
+    </p>
 
-<% include partials/footer %>
+
+    <script>
+        function hide() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+<script>
+        function show() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "inline";
+            }
+        }
+    </script>
+<script>
+        function showBlock() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+    </script>
+    <button onclick="hide()">Hide elements</button>
+    <button onclick="show()">Show elements</button>
+    <button onclick="showBlock()">Show elements as block</button>
+
+
+    <h2 class="city">London</h2>
+    <h2 class="city">ukraine</h2>
+    <h2 class="city">boston</h2>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <iframe class="center" src="https://github.com/Matthew-Tebaldi"></iframe>
+
+    <a href="#h01">Back to top</a>
+
+
+    <% include partials/footer %>

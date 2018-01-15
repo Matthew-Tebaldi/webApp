@@ -4,15 +4,27 @@ body {
     font-family: verdana;
     font-size: 100%;
 }
+h2{
+    color: coral;
+}
 #h01 {
     color: rgb(30, 255, 0);
     border: 2px solid rgb(1, 9, 10);
     padding: 30px;
     margin: 25px;
 }
-p.error {
-    color: red;
+
+p {
+    color: aliceblue;
+    padding: 30px;
+    margin: 25px;
+
 }
+
+
+.center {
+    text-align: center;
+  }
 
 
 a:link {
